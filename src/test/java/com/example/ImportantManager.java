@@ -11,13 +11,6 @@ public class ImportantManager {
         System.out.println(start);
     }
 
-    public static ImportantManager init() {
-        if (instance == null) {
-            instance = new ImportantManager();
-        }
-        return instance;
-    }
-
     public void stop() {
         System.out.println(stop);
     }
