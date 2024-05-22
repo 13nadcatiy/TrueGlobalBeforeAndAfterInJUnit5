@@ -1,31 +1,31 @@
 package com.example;
 
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 
 public class TestBase {
 
     public static ImportantManager im;
 
-    //@BeforeEach
-    public void beforeTest(){
+    //@BeforeMethod
+    public void beforeTest() {
         im = new ImportantManager();
     }
 
-    //@AfterEach
-    public void afterTest(){
+    //@AfterMethod
+    public void afterTest() {
         im.stop();
     }
 
-    //@BeforeAll
-    public static void beforeAll(){
+    //@BeforeTest
+    public static void beforeAll() {
         im = new ImportantManager();
     }
 
-    //@AfterAll
-    public static void afterAll(){
+    //@AfterTest
+    public static void afterAll() {
         im.stop();
     }
 }
