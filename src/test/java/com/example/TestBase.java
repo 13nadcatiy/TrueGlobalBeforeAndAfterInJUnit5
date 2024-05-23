@@ -1,9 +1,7 @@
 package com.example;
 
 import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
 
 public class TestBase {
 
@@ -19,13 +17,13 @@ public class TestBase {
         im.stop();
     }
 
-    //@BeforeAll
+    @BeforeAll
     public static void beforeAll() {
-        im = new ImportantManager();
+        System.out.println("start some test-class");
     }
 
-    //@AfterAll
+    @AfterAll
     public static void afterAll() {
-        im.stop();
+        System.out.println("done some test-class");
     }
 }
