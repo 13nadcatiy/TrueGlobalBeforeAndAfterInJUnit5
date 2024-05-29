@@ -3,7 +3,7 @@ package com.example;
 import org.junit.jupiter.api.extension.BeforeAllCallback;
 import org.junit.jupiter.api.extension.ExtensionContext;
 
-public class CustomCallback extends TestBase implements BeforeAllCallback {
+public class ExtensionByTitar extends TestBase implements BeforeAllCallback {
 
     @Override
     public void beforeAll(ExtensionContext context) {
@@ -17,11 +17,11 @@ public class CustomCallback extends TestBase implements BeforeAllCallback {
     }
 
     public void beforeAllTests(ExtensionContext context) {
-        im = new ImportantManager();
+        manager = new ImportantManager();
     }
 
     public void afterAllTests() {
-        im.stop();
-        im = null;
+        manager.stop();
+        manager = null;
     }
 }

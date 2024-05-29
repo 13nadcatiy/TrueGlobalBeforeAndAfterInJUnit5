@@ -6,10 +6,10 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.extension.ExtendWith;
 
-@ExtendWith(CustomCallback.class)
+@ExtendWith(ExtensionByUstrashkin.class)
 public class TestBase {
 
-    public static ImportantManager im;
+    public static ImportantManager manager;
 
     @BeforeEach
     public void beforeTest() {
