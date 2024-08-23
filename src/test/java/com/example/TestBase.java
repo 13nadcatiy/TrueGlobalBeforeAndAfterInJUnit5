@@ -1,31 +1,26 @@
 package com.example;
 
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
-
 public class TestBase {
 
-    public static ImportantManager im;
+    public static ImportantManager manager;
 
     //@BeforeEach
-    public void beforeTest() {
-        im = new ImportantManager();
+    public void beforeEach() {
+        System.out.println("@BeforeEach");
     }
 
     //@AfterEach
-    public void afterTest() {
-        im.stop();
+    public void afterEach() {
+        System.out.println("@AfterEach");
     }
 
     //@BeforeAll
     public static void beforeAll() {
-        im = new ImportantManager();
+        System.out.println("@BeforeAll");
     }
 
     //@AfterAll
     public static void afterAll() {
-        im.stop();
+        System.out.println("@AfterAll");
     }
 }

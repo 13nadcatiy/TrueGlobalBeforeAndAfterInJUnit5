@@ -7,16 +7,16 @@ public class ThirdTestsClass extends TestBase {
 
     @Test
     public void test7() {
-        System.out.println("Это Test7");
+        System.out.println("Класс 3, Тест 1");
     }
 
     @Test
     public void test8() {
-        System.out.println("Это Test8");
+        System.out.println("Класс 3, Тест 2");
     }
 
     @Test
     public void test9() {
-        System.out.println("Это Test9");
+        System.out.println("Класс 3, Тест 3");
     }
 }
