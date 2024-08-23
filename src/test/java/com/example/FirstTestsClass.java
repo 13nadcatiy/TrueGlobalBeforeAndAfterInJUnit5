@@ -5,22 +5,22 @@ import org.junit.jupiter.api.Test;
 public class FirstTestsClass extends TestBase {
 
     @Test
-    public void test1() {
-        System.out.print("Класс 1, ");
-        someMethod();
+    public void test1_1() {
+        outputInfo();
+        //someMethod();
     }
 
     private void someMethod() {
-        System.out.println("Тест 1");
+        System.out.println("-Внутренний метод теста-");
     }
 
     @Test
-    public void test2() {
-        System.out.println("Класс 1, Тест 2");
+    public void test1_2() {
+        outputInfo();
     }
 
     @Test
-    public void test3() {
-        System.out.println("Класс 1, Тест 3");
+    public void test1_3() {
+        outputInfo();
     }
 }
