@@ -2,13 +2,14 @@ package com.example;
 
 public class ImportantManager {
 
-    private static ImportantManager instance;
+    public static int instanceCount = 0;
 
     String start = "Запускается важный менеджер";
     String stop = "Важный менеджер останавливается";
 
     public ImportantManager() {
         System.out.println(start);
+        instanceCount++;
     }
 
     public void stop() {
