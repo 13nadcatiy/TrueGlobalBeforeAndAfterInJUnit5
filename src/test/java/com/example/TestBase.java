@@ -23,21 +23,25 @@ public class TestBase {
 
     //@BeforeEach
     public void beforeEach() {
+        beforeEach++;
         System.out.println("---@BeforeEach---: " + beforeEach);
     }
 
     //@AfterEach
     public void afterEach() {
+        afterEach++;
         System.out.println("---@AfterEach----: " + afterEach);
     }
 
     //@BeforeAll
     public static void beforeAll() {
+        beforeAll++;
         System.out.println("-----@BeforeAll-----: " + beforeAll);
     }
 
     //@AfterAll
     public static void afterAll() {
+        afterAll++;
         System.out.println("-----@AfterAll------: " + afterAll);
     }
 }
