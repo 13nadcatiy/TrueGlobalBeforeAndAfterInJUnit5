@@ -17,7 +17,8 @@ public class TestBase {
     public static int classCount = 0;
 
     public void outputInfo() {
-        System.out.println(String.format("Класс %d, Тест %d", classCount, testCount));
+        System.out.println("Это автотест");
+        //System.out.println(String.format("Класс %d, Тест %d", classCount, testCount));
     }
 
     //@BeforeEach
